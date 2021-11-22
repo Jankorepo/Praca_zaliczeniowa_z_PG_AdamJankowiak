@@ -9,11 +9,9 @@ public class GameMenager : MonoBehaviour
     public GameObject gameStartCanvas;
     public GameObject gameRestartButtonCanvas;
     public GameObject gameWonCanvas;
-
     void Start()
     {
         Time.timeScale = 1;
-
     }
     public void GameOver()
     {
@@ -33,7 +31,6 @@ public class GameMenager : MonoBehaviour
         gameRestartButtonCanvas.SetActive(true);
         Time.timeScale = 0;
     }
-
     public void Replay()
     {
         SceneManager.LoadScene(0);

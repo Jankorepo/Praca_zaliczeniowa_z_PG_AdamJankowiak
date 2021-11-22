@@ -6,6 +6,12 @@ public class LockRotation : MonoBehaviour
 {
     private Quaternion lockedRotation;
 
-    void Start() { lockedRotation = transform.rotation; }
-    void Update() { transform.rotation = lockedRotation; }
+    void Start()
+    { 
+        lockedRotation = transform.rotation; 
+    }
+    void Update() 
+    { 
+        transform.rotation = lockedRotation; 
+    }
 }

@@ -26,7 +26,6 @@ public class Flying : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.A) && flightStability == 100)
         {
             position = position - 0.5f;
-
         }
         else if (Input.GetKeyDown(KeyCode.D) && flightStability == 100)
         {
@@ -45,7 +44,6 @@ public class Flying : MonoBehaviour
             gameMenager.GameWon();
         }
         transform.position = new Vector3(position, transform.position.y, transform.position.z);
-
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
